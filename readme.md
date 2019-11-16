@@ -15,3 +15,41 @@ Getting started with Miniel is pretty easy and simple. It can be cloned from the
 
 Learning how to use Miniel is easy as you can follow the documentation.
 
+
+## Hot To
+
+   * HOW TO DO BASIC SQL COMMANDS E.G select, update, delete, insert
+   
+   >INSERT
+    
+   String $tablename = 'users'
+   
+   Array $data = array(['name' => 'John Doe']);
+    
+   RUN
+   
+   DB::table($tablename)->insert(array $data);
+   
+   
+   SELECT (Without Clauses)
+   
+   String $tablename = 'users'
+   
+   Array $columns = array(['name']);
+   
+   DB::table($tablename)->select($columns);
+   
+   -
+   SELECT (With Clauses (WHERE... AND... & WHERE... OR...))
+   
+   String $tablename = 'users'
+   
+   Array $columns = array(['name']);
+   
+   Array $andClause = array(['column' => 'value']);
+   
+   Array $orClause = array(['column' => 'value']);
+   
+   "SELECT 'columns' FROM $tablename WHERE id=1 OR name='John'"
+   
+   DB::table($tablename)->select($columns)->where($andClause)->orWhere($orClause)->execute();

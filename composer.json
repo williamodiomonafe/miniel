@@ -1,0 +1,21 @@
+{
+  "name": "miniel/miniel",
+  "authors": [
+    {
+      "name": "William Odiomonafe",
+      "email": "william.odiomonafe@gmail.com",
+    }
+  ],
+  "description": "The Lightweight Miniel Framework.",
+  "keywords": ["framework", "miniel", "lightwieght"],
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  }
+}

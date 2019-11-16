@@ -9,6 +9,7 @@
   "description": "The Lightweight Miniel Framework.",
   "keywords": ["framework", "miniel", "lightwieght"],
   "type": "project",
+  "license": "MIT",
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.0.0"
